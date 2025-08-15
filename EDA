@@ -1,0 +1,59 @@
+📊 Exploratory Data Analysis (EDA)
+
+1️⃣ Data Overview
+The dataset has 200 rows and 5 columns.
+Columns:
+CustomerID → Unique identifier for each customer.
+Gender → Categorical (Male/Female).
+Age → Integer values (ranging from young adults to seniors).
+Annual Income (k$) → Continuous numerical feature.
+Spending Score (1–100) → Numerical score indicating spending behavior.
+
+2️⃣ Missing Values & Data Types
+No missing values detected in the dataset.
+Data types:
+CustomerID → Integer (non-essential for clustering)
+Gender → Object (needs encoding)
+Age, Annual Income (k$), Spending Score (1–100) → Integer
+
+3️⃣ Univariate Analysis
+📌 Gender Distribution
+Males: ~48%
+Females: ~52%
+The gender split is fairly balanced, ensuring no strong gender bias in the dataset.
+
+📌 Age Distribution
+The average age is around 38 years.
+Most customers are between 30–40 years old.
+Few customers are above 60 years (senior shoppers).
+
+📌 Annual Income Distribution
+Ranges from $15k to $137k.
+Most customers earn between $40k and $80k.
+
+📌 Spending Score Distribution
+Uniformly distributed from 1 to 100.
+Mall’s scoring covers a wide range of spending behaviors.
+
+4️⃣ Bivariate Analysis
+📌 Gender vs Age
+Both genders are represented across all age groups.
+Slightly higher number of female customers in the 20–40 range.
+
+📌 Annual Income vs Spending Score
+Clear spread of customers across income and spending levels.
+Potential visible clusters:
+High Income – High Spending
+High Income – Low Spending
+Low Income – High Spending
+Low Income – Low Spending
+
+📌 Age vs Spending Score
+Younger customers (20–30) tend to have higher spending scores.
+Spending drops slightly for older age groups.
+
+5️⃣ Insights from EDA
+Diverse customer base in terms of age, income, and spending.
+Gender distribution is balanced, so no need for gender-weighted analysis.
+Spending score and income are the most promising features for segmentation.
+Customers with similar income can have vastly different spending scores, indicating multiple behavioral patterns.
